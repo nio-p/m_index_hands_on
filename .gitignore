@@ -1,8 +1,8 @@
 undo*
 binlog*
 \#innodb_temp*
+\#ib_*
 ibtmp*
-
 ib_buffer_pool
 ib_logfile0
 ib_logfile1
