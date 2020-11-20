@@ -1,0 +1,11 @@
+version: "2"
+services:
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    volumes:
+      - "./mysql/init:/docker-entrypoint-initdb.d"
+      - "./mysql/data:/var/lib/mysql"
+    environment:
+      - MYSQL_ROOT_PASSWORD=Hoge1234_Hoge1234
